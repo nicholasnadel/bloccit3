@@ -19,5 +19,6 @@ describe User do
       favorite = @user.favorites.where(post: @post).create
       expect( @user.favorited(@post) ).to eq(favorite)
     end
+
   end
 end

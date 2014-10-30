@@ -12,3 +12,5 @@ class Vote < ActiveRecord::Base
     post.update_rank
   end
 end
+
+
