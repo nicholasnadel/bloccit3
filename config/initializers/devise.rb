@@ -4,7 +4,7 @@ Devise.setup do |config|
   # The secret key used by Devise. Devise uses this key to generate
   # random tokens. Changing this key will render invalid all existing
   # confirmation, reset password and unlock tokens in the database.
-  config.secret_key = ENV['DEVISE_SECRET_KEY']
+  # config.secret_key = 'fe52d600d14cb4e23f1ac804b97ec8bf11b61155c7f820aeee3204fef6658d551c424d6a76c810b0f714673dac77f3cc8722c111fd79a170306de7278a9b92a9'
 
   # ==> Mailer Configuration
   # Configure the e-mail address which will be shown in Devise::Mailer,
@@ -97,7 +97,7 @@ Devise.setup do |config|
   config.stretches = Rails.env.test? ? 1 : 10
 
   # Setup a pepper to generate the encrypted password.
-  # config.pepper = 'fb2e416e7411991d0aca28f2c0ff37294be5a4687835e4a2e8d5f81a10e773547035716dda65ab02e0851a7a5a3d3c85e65ef8002d33581a7ebcc154489ee368'
+  # config.pepper = 'fda18c55c35cd11706762b944a05f08b3766a7c99a379290baf023a2e2d1636d50e9bacc9d7419da5374d0919b7dea2c15192cbecd58ecc235f966b0e4af849d'
 
   # ==> Configuration for :confirmable
   # A period that the user is allowed to access the website even without
@@ -253,5 +253,4 @@ Devise.setup do |config|
   # When using omniauth, Devise cannot automatically set Omniauth path,
   # so you need to do it manually. For the users scope, it would be:
   # config.omniauth_path_prefix = '/my_engine/users/auth'
-  config.mailer_sender = "help@bloc.io"
 end
